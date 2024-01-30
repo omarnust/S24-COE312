@@ -54,6 +54,7 @@ public class Main {
 	    byte var1 = 0b10;
 	    byte var2 = 0b11;    
 	    System.out.println(Integer.toBinaryString(var1 | var2));
+	    // Java uses 2's compliment for negative numbers 
 	    
 	    // ******************************************   String
 	    System.out.println("*** String Class *** ");
@@ -74,6 +75,7 @@ public class Main {
 	    // The Java Math class has many methods that allows you to perform mathematical tasks on numbers.
 	    System.out.println(Math.max(20,5));
 	    
+	    // ******************************************   If else
 	    System.out.println("*** Control Flow,if else *** ");
 	    // If else statement
 	    int time = 20;
@@ -179,12 +181,22 @@ public class Main {
 		
 		// ******************************************   Java Methods and methods overloading
 		System.out.println("*** Java Methods and methods overloading *** ");
-		myMethod1();
-		myMethod2("Ahmad", 10);
-		System.out.println(myMethod3(6,7));
+		myMethod1(); // no arguments
+		myMethod2("Ahmad", 10); // with arguments
+		System.out.println(myMethod3(6,7)); // functions returns a value
 		
+		// method overloading
 		System.out.println(plusMethod(6,7));
 		System.out.println(plusMethod(6.5,7.9));
+		
+		// Variable are pass by value
+		int var = 10;
+		myMethod4(var);
+		System.out.println(var);
+		// Reference data types behave differently as they hold references of the objects in memory.
+		int[] array = {1,2,3,4,5};
+		myMethod5(array);
+		System.out.println(Arrays.toString(array));
 			    
 	}
 	
@@ -198,10 +210,19 @@ public class Main {
 		System.out.println(name + " is " + age);
 	}
 	
-	// Primitive data types are passed by value, whereas user defined classes are passed by reference
 	static int myMethod3(int x, int y) {
 		return x + y;
 	}
+	
+	// All variable are passed by value, however primitive data types and non-primitive 
+	//(referenced types) data types behave differently
+	static void myMethod4(int a) {
+		a = 10;
+	}
+	static void myMethod5(int[] a) {
+		a[0] = 10;
+	}
+	
 	// method overloading
 	// With method overloading, multiple methods can have the same name with different parameters:
 	static int plusMethod(int x, int y) {
@@ -212,7 +233,9 @@ public class Main {
 		  return x + y;
 	}
 	
+	
 	// scope: variables are only accessible inside the region they are created. This is called scope.
-	// Method scope
-	// Block scope
+	// Method scope: Variables declared directly inside a method are available anywhere in the method following the line the variable is declared. 
+	// Block scope:  A block of code refers to all of the code between curly braces {}
+	// Variables declared inside blocks of code are only accessible by the code between the curly braces.
 }
