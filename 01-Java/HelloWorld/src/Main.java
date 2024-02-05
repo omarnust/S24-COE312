@@ -203,6 +203,7 @@ public class Main {
 	// Java Methods
 	// static means that the method belongs to the class and not the object
 	// void means that the method does not return value.
+	// Methods must be static as we are calling them from main without instantiating the class.
 	static void myMethod1() {
 		System.out.println("I am myMethod");
 	}

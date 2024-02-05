@@ -3,8 +3,10 @@
 // The class can contain abstract method
 // If a class contains abstract method, then it needs to be an abstract class
 public abstract class Animal {
+	
 	int weight;
 	Leg[] legs;
+	
 	
 	Animal(){
 		
@@ -23,8 +25,9 @@ public abstract class Animal {
 	}
 	
 	public void about() {
-		System.out.println(this + "with sound " + sound());
+		System.out.println(this + " with sound " + sound());
 	}
 	
 	public abstract String sound();
+	
 }

@@ -72,7 +72,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		/*
 		Car myCar = new Car();
 		System.out.println(myCar.color);
 				
@@ -107,12 +107,18 @@ public class Main {
 			
 		}
 		
+		*/
+		int w = 10;
+		Cat myCat = new Cat(w);
+		Dog myDog = new Dog();
 		
-		//Cat myCat = new Cat();
-		//Dog myDog = new Dog();
 		
-		//myCat.about();
-		//myDog.about();
+		myCat.about();
+		myDog.about();
+		
+		
 	}
+	
+	
 
 }
