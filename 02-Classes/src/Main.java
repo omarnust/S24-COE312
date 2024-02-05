@@ -109,7 +109,7 @@ public class Main {
 		
 		*/
 		int w = 10;
-		Cat myCat = new Cat(w);
+		Cat myCat = new Cat(10);
 		Dog myDog = new Dog();
 		
 		

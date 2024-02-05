@@ -1,5 +1,8 @@
 public class Dog extends Mammal implements Pet{
 	
+	// Without a constructor explicity createdOnly default constructor exists.
+	
+	
 	public void walk() {
 		System.out.println("Dog is walking");
 	}
