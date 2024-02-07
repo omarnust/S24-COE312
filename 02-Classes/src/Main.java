@@ -68,11 +68,12 @@
  */
 import java.util.Scanner;
 
+
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
+		
 		Car myCar = new Car();
 		System.out.println(myCar.color);
 				
@@ -87,27 +88,35 @@ public class Main {
 		// using Scanner 
 		try {
 			Scanner input = new Scanner(System.in);
+			
 			System.out.println("Make");
 			String make = input.nextLine();
+			
 			System.out.println("Model");
 			String model = input.nextLine();
+			
 			System.out.println("Year");
 			while (!input.hasNextInt()) {
 				System.out.println("Enter a valid Year");
 			    input.next();
 			}
 			int year = input.nextInt();
+			
 			input.nextLine();
+
 			System.out.println("Color");
 			String color = input.nextLine();
+			
 			Car myNewCar2 = new Car(make, model, year, color);
 			System.out.println(myNewCar2.aboutCar());
 			
 		}catch(Exception e) {
-			
+			System.out.println("Error: asdf");
 		}
 		
-		*/
+		
+
+		
 		int w = 10;
 		Cat myCat = new Cat(10);
 		Dog myDog = new Dog();
