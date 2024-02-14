@@ -95,6 +95,8 @@ public class FileExample {
 			System.out.print("\n");
 			System.out.println(Arrays.toString(b));
 			
+			fin.close();
+			
 			
 		}catch(IOException e) {
 			System.err.println("Error in function run5");
