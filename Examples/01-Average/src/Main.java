@@ -1,3 +1,15 @@
+/*
+ * Write a class called Average that can read from any input stream and computes the 
+ * average of the stream seen so far. You can assume that the input stream consists of 
+ * data type double stored in a machine independent way. The class Average has one 
+ * function called read() which reads the next double number and returns the average of 
+ * the stream seen so far. 
+
+ * You must run and provide output on the following program (without any changes to the program).  
+ * You are not allowed to make any changes to this program. 
+
+ */
+
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.io.FileInputStream;
