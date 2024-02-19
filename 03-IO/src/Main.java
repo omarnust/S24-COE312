@@ -19,8 +19,9 @@ public class Main {
 		*/
 		
 		//FileExample.run4();
-		BufferExample.run1();
-		//DataStreamExample.run1();
+		//BufferExample.run1();
+		DataStreamExample.run1();
+		DataStreamExample.run2();
 		
 	}
 

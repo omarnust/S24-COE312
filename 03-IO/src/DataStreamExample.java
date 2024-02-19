@@ -23,6 +23,25 @@ public class DataStreamExample {
 		}
 	}
 	
+	public static void run2() {
+		try {
+			FileInputStream fin = new FileInputStream("dataout.txt");
+			DataInputStream din = new DataInputStream(fin);
+			
+			float f1 = din.readFloat();
+			int i1 = din.readInt();
+			float f2 = din.readFloat();
+			
+			System.out.println(f1 + " " + f2 + " " + i1);
+			
+			din.close();
+			System.out.println("Success...");
+			
+		}catch(IOException e) {
+			System.err.println("Error");
+		}
+	}
+	
 	
 	
 	
