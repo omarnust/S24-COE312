@@ -8,6 +8,6 @@ public class UndergraduateStudent extends Student{
     public String toString() {
     	return "Undergraduate student: \nName: " + name +
                "\nID: " + id + 
-               "\nTuiton: AED" + tuition + "\n";
+               "\nTuiton: AED" + 2000 + "\n";
     }
 }
