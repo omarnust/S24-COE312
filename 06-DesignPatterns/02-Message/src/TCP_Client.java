@@ -10,10 +10,10 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 public class TCP_Client extends ConcreteSubject implements Runnable {
-	String host = "192.168.0.110";
-	int port = 1234;
+	String host;
+	int port;
 
-	int power_threshold = 30;
+	int power_threshold = 20;
 	
 	JSONParser parser = new JSONParser();
 
@@ -36,15 +36,16 @@ public class TCP_Client extends ConcreteSubject implements Runnable {
 			BufferedReader br = new BufferedReader(reader);
 			String line = "";
 			while ((line = br.readLine()) != null) {
-				System.out.println(line);
+				//System.out.println(line);
 				
 				JSONObject jsonObject = (JSONObject) parser.parse(line);
 				String logS = (String) jsonObject.get("avAudioRecorderAveragePower");
 				float power = Float.parseFloat(logS);
-				System.out.println(logS);
+				//System.out.println(logS);
 			
 				if(Math.abs(power)  < power_threshold) {
 					// send a message to who ever wants it 
+					//System.out.println(logS);
 					Message m = new Message(this, "speaking", "yes"); 
 					publishMessage(m);
 				}

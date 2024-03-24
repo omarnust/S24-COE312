@@ -2,10 +2,9 @@
 public class Main {
 
 	public static void main(String[] args) {
-		TCP_Client phone = new TCP_Client("10.25.141.93", 53352); // to start the server
+		TCP_Client phone = new TCP_Client("192.168.68.108", 64002); // to start the server
 		
 		ConcreteSubject[] subjects = {phone};
-		
 		SimpleObserver o1 = new SimpleObserver(subjects);
 		
 		//Clock c1 = new Clock(1);
