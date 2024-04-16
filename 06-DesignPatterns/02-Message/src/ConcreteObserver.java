@@ -4,7 +4,7 @@ public class ConcreteObserver implements Observer {
 
 	ConcreteSubject [] subject = null;
 
-	public ConcreteObserver(ConcreteSubject [] subject) {
+	public ConcreteObserver(ConcreteSubject[] subject) {
 		
 		this.subject = subject;
 	
