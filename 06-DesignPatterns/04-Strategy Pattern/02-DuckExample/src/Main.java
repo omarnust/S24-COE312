@@ -13,7 +13,7 @@ public class Main {
 		 rd.setFlyBehavior(null);
 		 rd.setQuackBehavior(new Quack());
 		 
-		 rd.
+		
 		
 
 	}
