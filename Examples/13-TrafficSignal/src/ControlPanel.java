@@ -23,7 +23,7 @@ public class ControlPanel implements Runnable{
 			try {
 				if (count<3) {
 					count +=1;
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 				}else {
 					count = 0;
 					commandList.get(0).execute();
