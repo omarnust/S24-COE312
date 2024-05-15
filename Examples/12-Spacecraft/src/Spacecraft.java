@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 public class Spacecraft implements Observer, Runnable{
 	public ArrayList<Integer> readings = new ArrayList<Integer>();
+	
 	State state;
 	
 	public Spacecraft(){
